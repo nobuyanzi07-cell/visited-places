@@ -17,3 +17,12 @@ h1, h2 {
     margin-bottom: 10px;
 }
 
+/*Input Styling*/
+input {
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+
