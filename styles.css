@@ -31,5 +31,11 @@ button {
     cursor: pointer;
 }
 
+/* ul Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 
 
