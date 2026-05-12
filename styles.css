@@ -12,3 +12,8 @@ section {
 }
 
 /*Heading Styling*/
+h1, h2 {
+    color: #d37bcf;
+    margin-bottom: 10px;
+}
+
