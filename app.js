@@ -43,4 +43,21 @@ Task.prototype.markDone = function() {
     console.log(`Task marked done: ${this.description}`);
 };
 
+//Instantiate managers
+const book = new AddressBook();
+const places = [];
+const tasks = [];
+
+//Address book interface
+document.getElementById('addContact').addEventListener('click', () => {
+    const name = document.getElementById('contactName').value;
+    const phone = document.getElementById('contactPhone').value;
+    const email = document.getElementById('contactEmail').value;
+    const contact = new Contact(name, phone, email);
+    book.addContact(contact);
+    const li = document.createElement('li');
+    li.textContent = contact.display();
+    document.getElementById('contactList').appendChild(li);
+});
+
 
