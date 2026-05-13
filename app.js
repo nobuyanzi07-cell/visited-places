@@ -3,7 +3,7 @@ function Contact(name, Phone, email) {
     this.name = name;
     this.phone = Phone;
     this.email = email;
-    console.log(`Created contact: ${this.display()}`);
+    console.log(`Contact created: ${name} - ${phone} - ${email}`);
 }
 
 Contact.prototype.updatePhone = function(newPhone) {
