@@ -1,0 +1,27 @@
+{
+  "name": "visited-places",
+  "version": "1.0.0",
+  "description": "A website that keeps track of places that one has visited so far",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nobuyanzi07-cell/visited-places.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nobuyanzi07-cell/visited-places/issues"
+  },
+  "homepage": "https://github.com/nobuyanzi07-cell/visited-places#readme",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
+}
