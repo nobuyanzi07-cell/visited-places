@@ -60,4 +60,46 @@ document.getElementById('addContact').addEventListener('click', () => {
     document.getElementById('contactList').appendChild(li);
 });
 
+//Place Interface
+document.getElementById('addPlace').addEventListener('click', () => {
+    const location = document.getElementById('placeLocation').value;
+    const landmark = document.getElementById('placeLandmark').value;
+    const place = new Place(location, landmark);
+    places.push(place);
 
+
+    const li = document.createElement('li');
+    li.textContent = place.summary();
+    document.getElementById('placeList').appendChild(li);
+    console.log(`Place added to list`);
+});
+
+//To do interface
+document.getElementById('addTask').addEventListener('click', () => {
+    const desc = document.getElementById('taskDesc').value;
+    const task = new Task(desc);
+    tasks.push(task);
+
+    const li = document.createElement('li');
+    li.textContent = task.description;
+    const doneBtn = document.createElement('button');
+    doneBtn.textContent = 'Done';
+    doneBtn.onclick = () => {
+        task.markDone();
+        li.style.textDecoration = 'line-through';
+        console.log(`Task marked done: ${task.description}`);
+    };
+
+    const removeBtn = document.createElement('button');
+    removeBtn.textContent = 'Remove';
+    removeBtn.onclick = () => {
+        li.remove();
+        console.log(`Task removed: ${task.description}`);
+    };
+
+    li.appendChild(doneBtn);
+    li.appendChild(removeBtn);
+    document.getElementById('taskList').appendChild(li);
+    console.log(`Task added to list`);
+});
+    
