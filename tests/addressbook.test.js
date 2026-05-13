@@ -1,6 +1,6 @@
-const AddressBook = require("../src/addressbook");
+const AddressBook = require("../src/addressBook.js");
 
-const Contact = require('../src/Contact');
+const Contact = require('../src/contact.js');
 
 test('adds and finds a contact', () => {
     const book = new AddressBook();

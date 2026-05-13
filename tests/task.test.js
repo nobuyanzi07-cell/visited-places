@@ -1,6 +1,6 @@
-const Task = require('../src/task');
+const Task = require('../src/task.js');
 
-Test('marks task as done', () => {
+test('marks task as done', () => {
     const t = new Task('Buy Vegetables');
     t.markDone();
     expect(t.done).toBe(true);

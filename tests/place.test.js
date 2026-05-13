@@ -1,4 +1,4 @@
-const Place  = require('../src/place');
+const Place  = require('../src/place.js');
 
 test('summaries place', () => {
     const p = new Place('Uhuru Park', 'Nairobi County');
