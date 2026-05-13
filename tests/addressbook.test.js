@@ -1,7 +1,7 @@
-const AddressBook = require('../src/AddressBook');
+const AddressBook = require("../src/addressbook");
 const Contact = require('../src/Contact');
 
-Test('adds and finds a contact', () => {
+test('adds and finds a contact', () => {
     const book = new AddressBook();
     const c = new Contact('Obuyanzi Nathan', '0723242452', 'nobuya67@example.com');
     book.addContact(c);
