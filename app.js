@@ -22,7 +22,7 @@ AddressBook.prototype.removeContact = function(name) {
   this.contacts = this.contacts.filter(c => c.name !== name);
 };
 
-// Place (simplified: only location + landmarks)
+// Place 
 function Place(location, landmarks) {
   this.location = location;
   this.landmarks = landmarks;
