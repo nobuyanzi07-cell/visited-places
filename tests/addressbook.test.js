@@ -1,4 +1,5 @@
 const AddressBook = require('../src/AddressBook');
+const Contact = require('../src/Contact');
 
 Test('adds and finds a contact', () => {
     const book = new AddressBook();
